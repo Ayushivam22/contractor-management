@@ -5,6 +5,7 @@ import Features from "@/helpComponents/Features";
 import ContractorPaymentsSection from "@/helpComponents/ContractPaymentSection";
 import GlobalHRIS from "@/helpComponents/GlobalHris";
 import FAQ from "@/helpComponents/FAQ";
+import Footer from "@/helpComponents/Footer";
 
 export default function Home() {
   return (
@@ -30,9 +31,8 @@ export default function Home() {
 
       <GlobalHRIS/>
       <FAQ/>
-
+      <Footer />
       {/* Footer goes here !!! */}
-      
     </div>
   );
 }
