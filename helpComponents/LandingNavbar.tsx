@@ -26,7 +26,7 @@ export default function LandingNavbar(){
               <a href="#benefits" className="text-foreground/80 hover:text-primary transition-smooth">Benefits</a>
               <a href="#testimonials" className="text-foreground/80 hover:text-primary transition-smooth">Reviews</a>
               <Button variant="outline" className="mr-4">Log In</Button>
-              <Button className="gradient-primary text-white border-0 shadow-primary hover:shadow-glow transition-smooth">
+              <Button className="gradient-primary text-white border-0 shadow-primary hover:shadow-glow transition-smooth" >
                 Get Started
               </Button>
             </div>
