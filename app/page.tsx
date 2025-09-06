@@ -1,3 +1,4 @@
+
 import Hero from "@/helpComponents/Hero";
 import LandingNavbar from "@/helpComponents/LandingNavbar";
 import Stats from "@/helpComponents/Stats";
@@ -6,15 +7,26 @@ import ContractorPaymentsSection from "@/helpComponents/ContractPaymentSection";
 import GlobalHRIS from "@/helpComponents/GlobalHris";
 import FAQ from "@/helpComponents/FAQ";
 import Footer from "@/helpComponents/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#FFFBF4] ">
-      <LandingNavbar/>
-      <Hero/>
-      <Stats/>
-      <Features/>
-      <ContractorPaymentsSection/>
+      <LandingNavbar />
+      <Hero />
+      <Stats />
+      <Features />
+      <ContractorPaymentsSection />
+
+      <nav className="my-6 flex space-x-6 justify-center">
+        <Link href="/auth/getstarted" className="text-blue-600 hover:underline">
+          Get Started
+        </Link>
+        <Link href="/auth/signup" className="text-blue-600 hover:underline">
+          Log In
+        </Link>
+      </nav>
+
       <div className="w-full overflow-hidden">
         <svg
           className="w-full text-blue-400"
@@ -28,11 +40,9 @@ export default function Home() {
           />
         </svg>
       </div>
-
-      <GlobalHRIS/>
-      <FAQ/>
+      <GlobalHRIS />
+      <FAQ />
       <Footer />
-      {/* Footer goes here !!! */}
     </div>
   );
 }
