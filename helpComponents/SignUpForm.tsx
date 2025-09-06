@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -5,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Eye, EyeOff, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
@@ -238,8 +240,8 @@ const SignUpForm = () => {
           <p className="text-sm text-muted-foreground">
             Already have an account?{" "}
             <Link
-              to="/signin"
-              className="text-accent hover:text-accent-glow font-medium transition-colors"
+              href="/signin"
+              className="text-black text-accent hover:text-accent-glow font-medium transition-colors"
             >
               Sign in
             </Link>

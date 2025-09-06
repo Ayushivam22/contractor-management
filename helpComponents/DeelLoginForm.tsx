@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -165,7 +167,7 @@ const DeelLoginForm = () => {
             Don't have an account?{" "}
             <a
               href="#"
-              className="text-accent hover:text-accent-glow font-medium transition-colors"
+              className="text-black text-accent hover:text-accent-glow font-medium transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 window.location.href = "/signup";

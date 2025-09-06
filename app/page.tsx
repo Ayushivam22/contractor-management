@@ -7,7 +7,6 @@ import ContractorPaymentsSection from "@/helpComponents/ContractPaymentSection";
 import GlobalHRIS from "@/helpComponents/GlobalHris";
 import FAQ from "@/helpComponents/FAQ";
 import Footer from "@/helpComponents/Footer";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,15 +16,6 @@ export default function Home() {
       <Stats />
       <Features />
       <ContractorPaymentsSection />
-
-      <nav className="my-6 flex space-x-6 justify-center">
-        <Link href="/auth/getstarted" className="text-blue-600 hover:underline">
-          Get Started
-        </Link>
-        <Link href="/auth/signup" className="text-blue-600 hover:underline">
-          Log In
-        </Link>
-      </nav>
 
       <div className="w-full overflow-hidden">
         <svg
