@@ -70,7 +70,7 @@ export default function SignInPage() {
                                     id="email"
                                     name="email"
                                     type="email"
-                                    placeholder="m@example.com"
+                                    placeholder="Enter your email"
                                     value={form.email}
                                     onChange={handleChange}
                                     required
@@ -82,7 +82,7 @@ export default function SignInPage() {
                                     id="password"
                                     name="password"
                                     type="password"
-                                    placeholder="••••••••"
+                                    placeholder="Enter your password"
                                     value={form.password}
                                     onChange={handleChange}
                                     required
