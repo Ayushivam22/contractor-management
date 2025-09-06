@@ -1,9 +1,8 @@
 "use client"
 
 import {motion} from "framer-motion"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
-
 
 export default function LandingNavbar(){
     return(
@@ -25,10 +24,12 @@ export default function LandingNavbar(){
               <a href="#features" className="text-foreground/80 hover:text-primary transition-smooth">Features</a>
               <a href="#benefits" className="text-foreground/80 hover:text-primary transition-smooth">Benefits</a>
               <a href="#testimonials" className="text-foreground/80 hover:text-primary transition-smooth">Reviews</a>
-              <Button variant="outline" className="mr-4">Log In</Button>
-              <Button className="gradient-primary text-white border-0 shadow-primary hover:shadow-glow transition-smooth" >
-                Get Started
-              </Button>
+              <Link href="/signup">
+                <Button variant="outline" className="mr-4">Log In</Button>
+              </Link>
+              <Link href="/signin">
+                <Button className="gradient-primary text-white border-0 shadow-primary hover:shadow-glow transition-smooth">Get Started</Button>
+              </Link>
             </div>
           </div>
         </div>
