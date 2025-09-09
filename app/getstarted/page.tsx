@@ -1,5 +1,5 @@
 import { Users, Globe, Shield, CheckCircle, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import digitalHeroImg from "@/assets/digital-age-hero.jpg";
 
@@ -12,7 +12,7 @@ const GetStarted = () => {
           {/* Background image */}
           <div 
             className="absolute inset-0 opacity-20 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${digitalHeroImg})` }}
+            style={{ backgroundImage: `url(/assets/digital-age-hero.jpg)` }}
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/40" />
@@ -111,8 +111,8 @@ const GetStarted = () => {
               </p>
               
               <div className="space-y-4">
-                <Link to="/signin" className="block">
-                  <Button className="w-full h-12 button-primary hover:hover-scale text-primary-foreground font-medium transition-all duration-300">
+                <Link href="/signin" className="block">
+                  <Button className="cursor-pointer w-full h-12 button-primary hover:hover-scale text-primary-foreground font-medium transition-all duration-300">
                     <div className="flex items-center space-x-2">
                       <span>Sign In</span>
                       <ArrowRight className="h-4 w-4" />
@@ -124,7 +124,7 @@ const GetStarted = () => {
                   variant="outline" 
                   className="w-full h-12 border-border hover:bg-muted hover-lift transition-all duration-200 text-foreground"
                 >
-                  <Link to="/signup" className="flex items-center space-x-2 w-full justify-center">
+                  <Link href="/signup" className="flex items-center space-x-2 w-full justify-center">
                     <span>Create Free Account</span>
                     <ArrowRight className="h-4 w-4" />
                   </Link>
